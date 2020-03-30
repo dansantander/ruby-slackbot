@@ -8,7 +8,7 @@ module News
 
       command 'get_news' do |client, data, _match|
         url = 'https://rss.app/feeds/aPyh7dgZjMnh7LeP.xml'
-        rss = RSS::Parser.parse(open(url).read, false).items.last
+        rss = RSS::Parser.parse(open(url).read, false).items.sample
         client.say(channel: data.channel, text: rss.link)
       end
 
