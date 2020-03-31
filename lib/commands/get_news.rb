@@ -5,39 +5,8 @@ require 'json'
 module News
   module Commands
     class GetNews < SlackRubyBot::Commands::Base
-
-      command 'get_news' do |client, data, _match|
-        url = 'https://rss.app/feeds/aPyh7dgZjMnh7LeP.xml'
-        rss = RSS::Parser.parse(open(url).read, false).items.sample
-        client.say(channel: data.channel, text: rss.link)
-      end
-
-      command 'get_politics' do |client, data, _match|
-        url = 'https://rss.app/feeds/Dk0X526oGrL6c2Rv.xml'
-        rss = RSS::Parser.parse(open(url).read, false).items.sample
-        client.say(channel: data.channel, text: rss.link)
-      end
-
-      command 'get_bussiness' do |client, data, _match|
-        url = 'https://rss.app/feeds/tssARKhZatlCihF1.xml'
-        rss = RSS::Parser.parse(open(url).read, false).items.sample
-        client.say(channel: data.channel, text: rss.link)
-      end
-
-      command 'get_entertainment' do |client, data, _match|
-        url = 'https://rss.app/feeds/P595TYafGAXO3td4.xml'
-        rss = RSS::Parser.parse(open(url).read, false).items.sample
-        client.say(channel: data.channel, text: rss.link)
-      end
-
-      command 'get_health' do |client, data, _match|
-        url = 'https://rss.app/feeds/FD3XTd2WJAPoVzjl.xml'
-        rss = RSS::Parser.parse(open(url).read, false).items.sample
-        client.say(channel: data.channel, text: rss.link)
-      end
-
       
-      command 'get_news_test' do |client, data, match|
+      command 'get_news' do |client, data, match|
         expression = match[:expression]
         if expression.nil?
           url = 'https://rss.app/feeds/swb9VWfLBCkRtWLo.xml'
@@ -57,7 +26,6 @@ module News
         end
       end
       
-
       command 'say_hi' do |client, data, _match|
         client.say(channel: data.channel, text: Hello.say_hi)
       end
@@ -87,7 +55,11 @@ class Topic
   def search_topic(topic)
     topic.downcase!
     @valid_topics.each do |k, v|
-      return topic == k.to_s ? v : nil
+      if topic == k.to_s
+        return v
+      else
+        nil
+      end
     end
   end
 end

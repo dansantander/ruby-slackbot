@@ -6,9 +6,11 @@ module GetNews
 
       command :get_news do
         title 'get_news'
-        desc 'Return the url of a random CNN World news'
-        long_desc 'Return the url of a random CNN World news'
+        desc 'Return the url of a random CNN news'
+        long_desc 'Return the url of a random CNN news'
       end
+
+
     end
   end
 end
