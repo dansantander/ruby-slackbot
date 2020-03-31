@@ -25,21 +25,10 @@ module News
           end
         end
       end
-      
-      command 'say_hi' do |client, data, _match|
-        client.say(channel: data.channel, text: Hello.say_hi)
-      end
-      
+
     end
   end
 end
-
-class Hello
-  def self.say_hi
-    'Hello! Welcome to NewsBot!'
-  end
-end
-
 
 class Topic
   def initialize
@@ -58,7 +47,7 @@ class Topic
       if topic == k.to_s
         return v
       else
-        nil
+        return nil
       end
     end
   end
