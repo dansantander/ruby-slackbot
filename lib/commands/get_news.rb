@@ -17,7 +17,7 @@ module News
           news = news_topic.search_topic(expression)
           if news.nil?
             client.say(text: "Sorry I couldn\'t find what you were looking for.\n" \
-            "Type 'help news topics' to see the topics available", channel: data.channel)
+            "Type 'help get_news' to see the topics available", channel: data.channel)
           else
             url = news
             rss = RSS::Parser.parse(open(url).read, false).items.sample

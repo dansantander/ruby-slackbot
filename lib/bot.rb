@@ -7,12 +7,12 @@ module GetNews
       command :get_news do
         title 'get_news'
         desc 'Returns the url of news from CNN'
-        long_desc 'After typing this command, add a space and type one of the following topics in lowercase:\n\n'\
-        'world\n\n'\
-        'politics\n\n'\
-        'bussiness\n\n'\
-        'entertainment\n\n'\
-        'health'
+        long_desc "After typing this command, add a space and type one of the following topics in lowercase:\n\n"\
+        "world\n\n"\
+        "politics\n\n"\
+        "bussiness\n\n"\
+        "entertainment\n\n"\
+        "health"
       end
     end
   end
