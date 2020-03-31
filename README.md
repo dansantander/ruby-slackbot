@@ -1,12 +1,9 @@
 # RUBY SLACK BOT
 
-The purpose of this project was to build a Bot with Ruby. I chose to build a Slack Bot because it's the platform I use the most for coding networking purposes.
+The purpose of this project was to build a Bot with Ruby. I chose to build a Slack Bot because it's the platform I use the most for communicating with my coding mates. Also, I built this bot thinking about what could be useful for every team in Slack without necessarily getting into the tech or programming field, so that's the reason why I made a newsbot. When called, it delivers a link to a pice of news from the CNN International website.
 
 
 Project: Ruby Capstone Project - Ruby Slack Bot
-
-[![Contributors][contributors-shield]][contributors-url]
-
 
 <br />
 <p align="center">
@@ -25,9 +22,6 @@ Project: Ruby Capstone Project - Ruby Slack Bot
   </p>
 </p>
 
-
-
-
 ## Table of Contents
 
 * [Getting Started](#getting-started)
@@ -42,17 +36,17 @@ Project: Ruby Capstone Project - Ruby Slack Bot
 ### Prerequisites
 
 You will need to:
-- Create a Slack workspace [here](https://slack.com/create#email)
-- Have a Slack API Token. You can get one by creating an app [here](http://slack.com/services/new/bot)
+- Create a Slack workspace [here](https://slack.com/create#email).
+- Have a Slack API Token. You can get one by creating an app [here](http://slack.com/services/new/bot).
 
-To complete the installations you should have installed:
+You should have installed:
 - Ruby
 - Bundler
 
 ### Install
 
-- Download or clone this project into your local machine
-- Install all the dependencies by runing `bundle init`
+- Download or clone this project into your local machine.
+- Install all the dependencies by running `bundle init` in your terminal inside your project directory.
 
 ### Usage
 
@@ -62,16 +56,24 @@ To start using this bot you'll need to create a file named .env in the root fold
 
 Once you have everything set, you can start the bot by running `rackup` into the main directory.
 
-After the bot is runing you can invite it to your channel
+After the bot is runing you can invite it to your Slack channel.
+
+![invite](./gifs/invite.gif)
 
 
 ## Commands
 
 ### help
 
+![help](./gifs/help.gif)
+
 ### get_news
 
+![get_news](./gifs/getnews.gif)
+
 ### get_news (topic)
+
+![get_news topic](./gifs/getnewstopics.gif)
 
 ## About The Project
 
@@ -82,22 +84,20 @@ Project built following the next Microverse requirements:
 - [x] You choose the platform and the functionality of the bot
 - [x] The README must include instructions on how to use the bot (how to install it and use it)
 
-
 ## Built With
 * Ruby
 * slack-ruby-bot
 * celluloid-io
 * dotenv
-* puma'
+* puma
 
 ## Acknowledgments
-This project was possible thanks to the Slack Ruby Bot gem
 
+This project was possible thanks to the [Slack Ruby Bot](https://github.com/slack-ruby/slack-ruby-bot) team.
 
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
 
 ## Contact
 
