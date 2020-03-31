@@ -12,11 +12,9 @@ class Topic
   def search_topic(topic)
     topic.downcase!
     @valid_topics.each do |k, v|
-      if topic == k.to_s
+      next if topic != k.to_s
         return v
-      else
-        return nil
-      end
     end
+    nil
   end
 end
