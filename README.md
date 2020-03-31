@@ -54,12 +54,13 @@ To start using this bot you'll need to create a file named .env in the root fold
 
 `SLACK_API_TOKEN=<your token>`
 
-Once you have everything set, you can start the bot by running `rackup` into the main directory.
+Once you have everything set, you can start the bot by running `rackup` from your terminal inside the main directory.
 
-After the bot is runing you can invite it to your Slack channel.
+After the bot is runing you can invite it to your Slack channel like this:
 
 ![invite](./gifs/invite.gif)
 
+And off you go!
 
 ## Commands
 
