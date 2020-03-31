@@ -12,7 +12,7 @@ module GetNews
         "politics\n\n"\
         "bussiness\n\n"\
         "entertainment\n\n"\
-        "health"
+        'health'
       end
     end
   end

@@ -6,14 +6,13 @@ require_relative 'topic.rb'
 module News
   module Commands
     class GetNews < SlackRubyBot::Commands::Base
-      
       command 'get_news' do |client, data, match|
         expression = match[:expression]
         if expression.nil?
           url = 'https://rss.app/feeds/swb9VWfLBCkRtWLo.xml'
-          rss = RSS::Parser.parse(open(url).read, false).items.sample
+          rss = RSS::Parser.parse(URI.open(url).read, false).items.sample
           client.say(channel: data.channel, text: rss.link)
-        else 
+        else
           news_topic = Topic.new
           news = news_topic.search_topic(expression)
           if news.nil?
@@ -21,12 +20,11 @@ module News
             "Type 'help get_news' to see the topics available", channel: data.channel)
           else
             url = news
-            rss = RSS::Parser.parse(open(url).read, false).items.sample
+            rss = RSS::Parser.parse(URI.open(url).read, false).items.sample
             client.say(channel: data.channel, text: rss.link)
           end
         end
       end
-
     end
   end
 end
