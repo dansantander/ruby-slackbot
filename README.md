@@ -34,30 +34,31 @@ Project: Ruby Capstone Project - Ruby Slack Bot
 ## Getting Started
 
 ### Prerequisites
-
-You will need to:
-- Create a Slack workspace [here](https://slack.com/create#email).
-- Have a Slack API Token. You can get one by creating an app [here](http://slack.com/services/new/bot).
-
 You should have installed:
 - Ruby
 - [Bundler](https://bundler.io/)
 
+You will need to:
+- Create a Slack workspace [here](https://slack.com/create#email).
+- Have a Slack API Token. You can get one by creating an app [here](http://slack.com/services/new/bot). Your Slack API Token is the one that starts it `xoxb-`. Remember to save it somwhere safe. You'll use it later.
+-Personalize your bot (name, icon, etc.)
+
 ### Install
 
 - Download or clone this project into your local machine.
-- As this repository already has a Gemfile ready, you should install all the dependencies by running `bundle` in your terminal inside your project directory. You can also use the `bundle install` command for this purpose. See more about it [here](https://bundler.io/v2.0/man/bundle-install.1.html). If everything went well with the installation for this step, you should now have a `Gemfile.lock` file inside your directory.
+- As this repository already has a Gemfile ready, you should install all the dependencies by running `bundle` in your terminal inside your project directory. You can also use the `bundle install` command for this purpose. See more about it [here](https://bundler.io/v2.0/man/bundle-install.1.html). If everything went well with the installation for this step, you should now have a file named `Gemfile.lock` inside your project directory.
 
 ### Usage
 
-To start using the bot you'll need to create a file named `.env` in the root folder and paste in your Slack API Token as follows:
+To start using the bot you'll need to create a file named `.env` in the root folder of the project and paste in your Slack API Token as follows:
 `SLACK_API_TOKEN=<your token>`
 Once you have everything set, you can start the bot by running `rackup` from your terminal inside the main directory.
-After the bot is running you can invite it to your Slack channel like this:
+After the bot is running, you can invite it to a Slack channel (in the workspace you created before) like this:
 
 ![invite](./gifs/invite.gif)
 
-And off you go!
+(Your bot will appear with the name and the icon you set before)
+And off you go! Hope you enjoy it. :)
 
 ## Commands
 
