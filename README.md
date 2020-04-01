@@ -46,7 +46,7 @@ You should have installed:
 ### Install
 
 - Download or clone this project into your local machine.
-- As this repository already has a Gemfile ready, you should install all the dependencies by running `bundle` in your terminal inside your project directory. You can also use the `bundle install` command for this purpose. See more about it [here](https://bundler.io/v2.0/man/bundle-install.1.html).
+- As this repository already has a Gemfile ready, you should install all the dependencies by running `bundle` in your terminal inside your project directory. You can also use the `bundle install` command for this purpose. See more about it [here](https://bundler.io/v2.0/man/bundle-install.1.html). If everything went well with the installation for this step, you should now have a `Gemfile.lock` file inside your directory.
 
 ### Usage
 
