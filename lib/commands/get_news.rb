@@ -1,6 +1,6 @@
 require 'rss'
 require 'open-uri'
-require_relative 'topic.rb'
+require_relative 'topic'
 
 module News
   module Commands

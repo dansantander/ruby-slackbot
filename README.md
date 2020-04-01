@@ -1,6 +1,6 @@
 # RUBY SLACK BOT
 
-The purpose of this project was to build a Bot with Ruby. I chose to build a Slack Bot because it's the platform I use the most for communicating with my coding mates. Also, I built this bot thinking about what could be useful for every team in Slack without necessarily getting into the tech or programming field, so that's the reason why I made a newsbot. When called, it delivers a link to a pice of news from the CNN International website.
+The purpose of this project was to build a Bot with Ruby. I chose to build a Slack Bot because it's the platform I use the most for communicating with my coding mates. Also, I built this bot thinking about what could be useful for every team in Slack without necessarily getting into the tech or programming field, so that's the reason why I made a newsbot. When called, it delivers a link to a piece of news from the CNN International website.
 
 
 Project: Ruby Capstone Project - Ruby Slack Bot
@@ -50,13 +50,10 @@ You should have installed:
 
 ### Usage
 
-To start using this bot you'll need to create a file named .env in the root folder and paste in your Slack Api Token as follows:
-
+To start using this bot you'll need to create a file named `.env` in the root folder and paste in your Slack API Token as follows:
 `SLACK_API_TOKEN=<your token>`
-
 Once you have everything set, you can start the bot by running `rackup` from your terminal inside the main directory.
-
-After the bot is runing you can invite it to your Slack channel like this:
+After the bot is running you can invite it to your Slack channel like this:
 
 ![invite](./gifs/invite.gif)
 
@@ -78,7 +75,7 @@ And off you go!
 
 ## About The Project
 
-Project built following the next Microverse requirements:
+This project was built following the next Microverse requirements:
 
 - [x] A bot developed in Ruby
 - [x] Recommended platforms: [Slack](https://github.com/slack-ruby/slack-ruby-bot), [Twitter](https://github.com/muffinista/chatterbot), [Telegram](https://github.com/atipugin/telegram-bot-ruby)
@@ -87,7 +84,7 @@ Project built following the next Microverse requirements:
 
 ## Built With
 * Ruby
-* slack-ruby-bot
+* slack-Ruby-Bot
 * celluloid-io
 * dotenv
 * puma
