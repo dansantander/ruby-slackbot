@@ -10,7 +10,7 @@ module GetNews
         long_desc "After typing this command, add a space and type one of the following topics in lowercase:\n\n"\
         "world\n\n"\
         "politics\n\n"\
-        "bussiness\n\n"\
+        "business\n\n"\
         "entertainment\n\n"\
         'health'
       end
