@@ -41,16 +41,16 @@ You will need to:
 
 You should have installed:
 - Ruby
-- Bundler
+- [Bundler](https://bundler.io/)
 
 ### Install
 
 - Download or clone this project into your local machine.
-- Install all the dependencies by running `bundle init` in your terminal inside your project directory.
+- As this repository already has a Gemfile ready, you should install all the dependencies by running `bundle` in your terminal inside your project directory. You can also use the `bundle install` command for this purpose. See more about it [here](https://bundler.io/v2.0/man/bundle-install.1.html).
 
 ### Usage
 
-To start using this bot you'll need to create a file named `.env` in the root folder and paste in your Slack API Token as follows:
+To start using the bot you'll need to create a file named `.env` in the root folder and paste in your Slack API Token as follows:
 `SLACK_API_TOKEN=<your token>`
 Once you have everything set, you can start the bot by running `rackup` from your terminal inside the main directory.
 After the bot is running you can invite it to your Slack channel like this:
