@@ -1,6 +1,5 @@
 require 'rss'
 require 'open-uri'
-require 'json'
 require_relative 'topic.rb'
 
 module News

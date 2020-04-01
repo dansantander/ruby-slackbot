@@ -1,3 +1,3 @@
 require 'slack-ruby-bot'
-require 'lib/commands/get_news'
-require 'lib/bot'
+require_relative '../lib/commands/get_news'
+require_relative '../lib/bot'

@@ -1,6 +1,6 @@
 # spec/newsbot_spec.rb
 
-require './lib/commands/topic'
+require_relative './lib/commands/topic'
 
 describe Topic do
   let(:topic) { Topic.new }
